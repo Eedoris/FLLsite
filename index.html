@@ -54,8 +54,8 @@
 
     <main>
         <section class="container py-5">
-            <h2 class="text-center pb-3 firstlego">Bienvenue à la FIRST® LEGO® League – Togo ...</h2>
-            <h4 class="lead text-center pb-3"> Saison 2024–2025 | Thème : <strong class="submerged">SUBMERGED℠</strong>
+            <h2 class="text-center pb-3 firstlego"> <strong style="color:#0077C8;">Bienvenue à la</strong> <strong style="color: rgb(248, 55, 55);">FIRST® LEGO® League</strong> <strong style="color:#0077C8 ;">Togo</strong>...</h2>
+            <h4 class="lead text-center pb-3" style="color: rgb(13, 13, 13);"> Saison 2024–2025 | Thème : <strong class="submerged">SUBMERGED℠</strong>
             </h4>
             <p class="text-start">La FIRST® LEGO® League (FLL) est bien plus qu'une compétition de robotique. C’est une
                 aventure éducative pour les jeunes Togolais de 9 à 16 ans autour des sciences, technologies, ingénierie
@@ -73,10 +73,11 @@
         </section>
         <section class="bg-light py-5">
             <div class="container text-center">
-                <h3 class="fw-bold mb-4">Quelques chiffres clés</h3>
+                <h3 class="fw-bold mb-4 animate__animated animate__fadeInDown">Quelques chiffres clés</h3>
                 <div class="row ">
                     <div class="col-md-3">
-                        <h4 class="numbers fw-bold">200</h4>
+
+                        <h4 class="numbers fw-bold">400</h4>
                         <p>participants</p>
                     </div>
                     <div class="col-md-3">
@@ -148,18 +149,73 @@
                 </div>
             </div>
         </section>
+
+        <div class="flip-countdown-section text-center py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="fw-bold mb-4">
+                    <i class="fas fa-trophy me-2 text-warning"></i>Finale Nationale FLL Togo
+                </h2>
+
+                <div class="flip-countdown-container">
+
+                    <div class="flip-countdown-item">
+                        <div class="flip-card">
+                            <div class="top" id="days-top">00</div>
+                            <div class="bottom" id="days-bottom">00</div>
+                            <div class="flip" id="days-flip">00</div>
+                        </div>
+                        <div class="flip-label">Jours</div>
+                    </div>
+
+
+                    <div class="flip-countdown-item">
+                        <div class="flip-card">
+                            <div class="top" id="hours-top">00</div>
+                            <div class="bottom" id="hours-bottom">00</div>
+                            <div class="flip" id="hours-flip">00</div>
+                        </div>
+                        <div class="flip-label">Heures</div>
+                    </div>
+
+
+                    <div class="flip-countdown-item">
+                        <div class="flip-card">
+                            <div class="top" id="minutes-top">00</div>
+                            <div class="bottom" id="minutes-bottom">00</div>
+                            <div class="flip" id="minutes-flip">00</div>
+                        </div>
+                        <div class="flip-label">Minutes</div>
+                    </div>
+
+
+                    <div class="flip-countdown-item">
+                        <div class="flip-card">
+                            <div class="top" id="seconds-top">00</div>
+                            <div class="bottom" id="seconds-bottom">00</div>
+                            <div class="flip" id="seconds-flip">00</div>
+                        </div>
+                        <div class="flip-label">Secondes</div>
+                    </div>
+                </div>
+
+                <div class="finale-info mt-4 pt-3">
+                    <p class="mb-2"><i class="fas fa-calendar-alt me-2"></i><strong>27 Juin 2025</strong></p>
+                    <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i><strong>Lomé, Togo</strong></p>
+                </div>
+            </div>
+        </div>
+
         <section class="py-5 bg-light">
             <div class="container text-center">
                 <h3 class="fw-bold pb-5"> Rejoignez l’aventure maintenant !</h3>
                 <div class="d-flex justify-content-center gap-4 flex-wrap">
                     <a class="btn btn-c px-4 py-3  btn-hover" href="#" role="button">
-                Inscrire votre équipe
-            </a>
-            <a class="btn btn-c px-4 py-3  btn-hover" href="#" role="button">
-                Devenir partenaire
-            </a>
+                        Inscrire votre équipe
+                    </a>
+                    <a class="btn btn-c px-4 py-3  btn-hover" href="#" role="button">
+                        Devenir partenaire
+                    </a>
         </section>
-
 
     </main>
 
@@ -209,6 +265,63 @@
         </div>
     </footer>
 
+    <script>
+
+        const finaleDate = new Date('June 27, 2025 09:00:00 GMT+00:00').getTime();
+        let previousValues = {};
+
+        function updateFlipCountdown() {
+            const now = new Date().getTime();
+            const distance = finaleDate - now;
+
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+            updateFlipValue('days', days);
+            updateFlipValue('hours', hours);
+            updateFlipValue('minutes', minutes);
+            updateFlipValue('seconds', seconds);
+
+
+            if (distance < 0) {
+                clearInterval(flipCountdownTimer);
+                document.querySelector('.flip-countdown-container').innerHTML =
+                    '<div class="col-12"><h4 class="text-success">L\'événement a commencé !</h4></div>';
+            }
+        }
+
+        function updateFlipValue(type, value) {
+            const valStr = value.toString().padStart(2, '0');
+
+            if (previousValues[type] !== valStr) {
+                const flipEl = document.getElementById(`${type}-flip`);
+                const topEl = document.getElementById(`${type}-top`);
+                const bottomEl = document.getElementById(`${type}-bottom`);
+
+
+                flipEl.textContent = previousValues[type] || '00';
+                flipEl.classList.add('flipping');
+
+
+                setTimeout(() => {
+                    topEl.textContent = valStr;
+                    bottomEl.textContent = valStr;
+                    flipEl.textContent = valStr;
+                    flipEl.classList.remove('flipping');
+                }, 500);
+
+                previousValues[type] = valStr;
+            }
+        }
+
+
+        updateFlipCountdown();
+        const flipCountdownTimer = setInterval(updateFlipCountdown, 1000);
+    </script>
 
 
 </body>
