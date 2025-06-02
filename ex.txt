@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLL Togo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-
-</head>
-
-<body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/ffl logo2.png" alt="fll Togo" class="navbar-logo">
@@ -34,7 +13,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link "  href="index.html">Accueil</a>
+                        <a class="nav-link " href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="programmes.html">Programmes</a>
@@ -43,10 +22,10 @@
                         <a class="nav-link" href="saison.html">Saison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="inscription.html">Inscriptions</a>
+                        <a class="nav-link" href="inscription.html">Inscriptions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="propos.html">À propos</a>
+                        <a class="nav-link active" aria-current="page"  href="propos.html">À propos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -60,12 +39,40 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Inscriptions</h1>
-        <h5 class=" text-center mb-4">Page en cours d'exécution</h5>
-    </div>
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</html>
+     .org-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .org-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .org-logo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+        .mission-item {
+            background: white;
+            border-left: 4px solid #0077C8;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
+        }
