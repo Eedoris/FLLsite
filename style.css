@@ -511,42 +511,13 @@ a.btn-c2 {
 
 
 
-/**/
-
-.main-sponsor-logo {
-    max-width: 300px;
-    height: auto;
-}
-
 .partner-logo {
-    max-width: 200px;
-    max-height: 180px;
+  max-height: 200px;
     width: auto;
-    height: auto;
+  object-fit: contain;
+  margin: 10px;
 }
 
-
-
-@media (max-width: 768px) {
-    .main-sponsor-logo {
-        max-width: 250px;
-    }
-    
-    .partner-logo {
-        max-width: 140px;
-    }
- 
-}
-
-@media (max-width: 576px) {
-    .main-sponsor-logo {
-        max-width: 200px;
-    }
-    
-    .partner-logo {
-        max-width: 120px;
-    }
-}
 
 
 .navbar-logo {
