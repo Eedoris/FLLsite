@@ -26,6 +26,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -103,15 +105,15 @@ form.d-flex .btn {
 
 .img_container {
     width: 100%;
-    height: 400px;
-    background-color: #6c757d;
+    height: 550px;
+    display: flex;
     position: relative;
     overflow: hidden;
 
 }
 
 .img_container img {
-    object-fit: cover;
+    object-fit:cover;
     height: 100%;
 }
 
@@ -467,94 +469,7 @@ h3.text-primary {
     position: relative;
 }
 
-.flip-card {
-    width: 100px;
-    height: 150px;
-    perspective: 1000px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.top,
-.bottom,
-.flip {
-    position: absolute;
-    width: 100%;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    font-weight: 900;
-    background: #111;
-    color: #f8f9fa;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.top {
-    border-radius: 8px 8px 0 0;
-    top: 0;
-    z-index: 2;
-}
-
-.bottom {
-    top: 75px;
-    border-radius: 0 0 8px 8px;
-    z-index: 1;
-    background: #1a1a1a;
-}
-
-.flip {
-    transform-origin: bottom;
-    transform: rotateX(90deg);
-    background: #e67e22;
-    z-index: 3;
-}
-
-.flip.flipping {
-    animation: flip 0.5s ease-in-out;
-}
-
-@keyframes flip {
-    0% {
-        transform: rotateX(0deg);
-    }
-
-    100% {
-        transform: rotateX(-90deg);
-    }
-}
-
-.flip-label {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    color: #eee;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-    .flip-card {
-        width: 70px;
-        height: 105px;
-    }
-
-    .top,
-    .bottom,
-    .flip {
-        height: 52.5px;
-        font-size: 2.2rem;
-    }
-
-    .bottom {
-        top: 52.5px;
-    }
-}
 
 .component-card {
     transition: all 0.3s ease;
@@ -696,3 +611,40 @@ a.btn-c2 {
             height: 3px;
             background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
         }
+
+        /*inscription page*/
+            .hover-effect {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .hover-effect:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+            }
+
+            .section-title {
+                position: relative;
+                padding-bottom: 15px;
+            }
+
+            .section-title:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 4px;
+                background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
+                border-radius: 2px;
+            }
+
+            .card-header {
+                font-weight: 600;
+            }
+
+            .list-group-item {
+                padding: 0.5rem 0;
+                background: transparent;
+                border-color: rgba(0, 0, 0, 0.05);
+            }

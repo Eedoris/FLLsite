@@ -76,3 +76,18 @@
             height: 3px;
             background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
         }
+
+
+
+
+        <!-- Exemple pour l'inscription d'équipe scolaire -->
+<a href="contact.html?form=ecole" class="btn btn-primary w-100">Formulaire d'inscription</a>
+
+<!-- Pour mentor -->
+<a href="contact.html?form=mentors" class="btn btn-success w-100">Postuler ici</a>
+
+<!-- Pour bénévolat -->
+<a href="contact.html?form=benevoles" class="btn btn-warning w-100">Formulaire bénévolat</a>
+
+<!-- Pour partenaire -->
+<a href="contact.html?form=partenaires" class="btn btn-info w-100">Contactez-nous</a>
