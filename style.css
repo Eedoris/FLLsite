@@ -113,7 +113,7 @@ form.d-flex .btn {
 }
 
 .img_container img {
-    object-fit:cover;
+    object-fit: cover;
     height: 100%;
 }
 
@@ -284,6 +284,7 @@ h3.text-primary {
 .bg-text {
     color: #1e88e5;
 }
+
 .bg-blue-gradient {
     background: linear-gradient(135deg, #1e88e5, #0d47a1);
 }
@@ -505,25 +506,25 @@ a.btn-c2 {
 .btn-hover2:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      background-color: #009327;
+    background-color: #009327;
     color: #fff;
 }
 
 
 
 .partner-logo {
-  max-height: 200px;
+    max-height: 200px;
     width: auto;
-  object-fit: contain;
-  margin: 10px;
+    object-fit: contain;
+    margin: 10px;
 }
 
 
 
 .navbar-logo {
-    max-height: 60px;  
-    width: auto;      
-    padding: 5px 0;  
+    max-height: 60px;
+    width: auto;
+    padding: 5px 0;
     transition: all 0.3s ease;
 }
 
@@ -545,77 +546,93 @@ a.btn-c2 {
 }
 
 
- .org-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-        .org-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .org-logo {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-        .mission-item {
-            background: white;
-            border-left: 4px solid #0077C8;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 0 8px 8px 0;
-        }
-        .section-title {
-            position: relative;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-        .section-title:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
-        }
+.org-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
 
-        /*inscription page*/
-            .hover-effect {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
+.org-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
-            .hover-effect:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
-            }
+.org-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
 
-            .section-title {
-                position: relative;
-                padding-bottom: 15px;
-            }
+.mission-item {
+    background: white;
+    border-left: 4px solid #0077C8;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0 8px 8px 0;
+}
 
-            .section-title:after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 80px;
-                height: 4px;
-                background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
-                border-radius: 2px;
-            }
+.section-title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
 
-            .card-header {
-                font-weight: 600;
-            }
+.section-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #0077C8, rgb(248, 53, 53));
+}
 
-            .list-group-item {
-                padding: 0.5rem 0;
-                background: transparent;
-                border-color: rgba(0, 0, 0, 0.05);
-            }
+/*inscription page*/
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+
+.card-header {
+    font-weight: 600;
+}
+
+.list-group-item {
+    padding: 0.5rem 0;
+    background: transparent;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.partner-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/**/
+
+/* Bannière en plein écran largeur */
+.sub_text {
+    background-color: rgba(12, 82, 129, 0.4); /* semi-transparent noir */
+    color: white;
+    padding: 1rem;
+    border-radius: 3x;
+}
