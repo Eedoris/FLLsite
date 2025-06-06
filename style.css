@@ -611,6 +611,7 @@ a.btn-c2 {
     border-color: rgba(0, 0, 0, 0.05);
 }
 
+/*
 
 .partner-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -619,7 +620,7 @@ a.btn-c2 {
 .partner-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .section-title {
     font-family: 'Montserrat', sans-serif;
@@ -631,8 +632,37 @@ a.btn-c2 {
 
 /* Bannière en plein écran largeur */
 .sub_text {
-    background-color: rgba(12, 82, 129, 0.4); /* semi-transparent noir */
+    background-color: rgba(12, 82, 129, 0.4);
     color: white;
     padding: 1rem;
     border-radius: 3x;
+}
+
+
+.partner-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.partner-logo-container {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-info {
+    min-height: 120px;
+}
+
+@media (max-width: 768px) {
+
+    .partner-logo-container,
+    .partner-info {
+        min-height: auto;
+    }
 }
