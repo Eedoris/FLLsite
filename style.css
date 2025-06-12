@@ -129,6 +129,7 @@ form.d-flex .btn {
 @media (max-width: 768px) {
     .img_container {
         height: 250px; 
+        margin-bottom: 5%;
     }
     .sub-img{
        max-height: 2%;
