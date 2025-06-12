@@ -83,6 +83,14 @@ main {
     flex: 1;
 }
 
+.gradient-background {
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 67%, rgba(222, 230, 255, 1) 100%);
+}
+
+
+
+
 /* Formulaire de recherche */
 form.d-flex input.form-control {
     max-width: 250px;
@@ -665,4 +673,114 @@ a.btn-c2 {
     .partner-info {
         min-height: auto;
     }
+}
+
+/**/
+
+.bg-purple-fll {
+    background-color: #6E3485;
+}
+
+.bg-red-fll {
+    background-color: #E51B22;
+}
+
+.bg-green-fll {
+    background-color: #009640;
+}
+
+.bg-gradient-sect {
+    background: linear-gradient(#e7a9ff, #d56cff);
+    color: white;
+}
+
+
+.hero-section {
+    background: url('img/mobile-hero.svg') no-repeat;
+    background-position: left center;
+    background-size: contain;
+    background-color: white;
+    /* ou autre couleur si besoin */
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background: none;
+        /* cacher le SVG sur mobile si besoin */
+    }
+}
+
+/*modif des couleurs de la page programmes*/
+
+body.programmes-page .btn-primary {
+    background-color: #6E3485 !important;
+    border-color: #6E3485 !important;
+}
+
+body.programmes-page .btn-outline-primary {
+    color: #6E3485 !important;
+    border-color: #5a2271 !important;
+}
+
+body.programmes-page .btn-outline-primary:hover {
+    background-color: #6E3485 !important;
+    color: #fff !important;
+}
+
+body.programmes-page .separator-line {
+    background-color: #6E3485 !important;
+}
+
+body.programmes-page .right-align {
+    border-right: 3px solid #6E3485 !important;
+}
+
+body.programmes-page .left-align {
+    border-left: 3px solid #6E3485 !important;
+}
+
+body.programmes-page .rounded-circle {
+    border-color: #6E3485 !important;
+}
+
+body.saison-party .btn-primary {
+    background-color: #c29c71 !important;
+    border-color: #c38743 !important;
+    color: #fff;
+    ;
+
+}
+
+body.saison-party .btn-primary:hover {
+    color: #fff;
+    ;
+
+}
+
+body.saison-party .btn-outline-primary {
+    background-color: #c29c71 !important;
+    border-color: #5a370f !important;
+}
+
+body.saison-party .btn-outline-primary:hover {
+    background-color: #c29c71 !important;
+    color: #fff !important;
+}
+
+body.saison-party .separator-line {
+    background-color: #c29c71 !important;
+}
+
+body.saison-party .text-color {
+    color: #c08848 !important;
+}
+
+body.saison-party  .gradient-background {
+ background: #ffffff;
+background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 64%, rgba(230, 170, 101, 1) 100%);
+}
+
+body.saison-page .gradient-background {
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 64%, #7ee7ffa5);
 }

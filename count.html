@@ -1,334 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLL Togo</title>
+    <title>FLL Togo - Programmes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
-    <link rel="stylesheet" href="style.css">
-
     <style>
-        .flipdown .rotor-group-heading {
-            color: white !important;
+        .divisions-section {
+            background-color: #f4f7fb;
+            padding: 60px 20px;
+        }
+
+        .division-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .division-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .division-image {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .division-content {
+            padding: 25px;
+        }
+
+        .division-content h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #16213E;
+        }
+
+        .division-status {
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 4px 8px;
+            border-radius: 5px;
+        }
+
+        .status-inactif {
+            background-color: #ffd6d6;
+            color: #cc0000;
+        }
+
+        .status-dev {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .status-actif {
+            background-color: #d4edda;
+            color: #155724;
         }
     </style>
-
-
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/ffl logo2.png" alt="fll Togo" class="navbar-logo">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="programmes.html">Programmes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="saison.html">Saison</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="inscription.html">Inscriptions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="propos.html">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
     <main>
-        <a href="count.html">count</a>
-        <section class="container pt-5 pb-3">
-            <h2 class="text-center pb-3 firstlego"> <strong style="color:#0077C8;">Bienvenue à la</strong> <strong
-                    style="color: rgb(248, 55, 55);">FIRST® LEGO® League</strong> <strong
-                    style="color:#0077C8 ;">Togo</strong>...</h2>
-            <!--<h4 class="lead text-center pb-3" style="color: rgb(13, 13, 13);"> Saison 2024–2025 | Thème : <strong
-                    class="submerged">SUBMERGED℠</strong>-->
-            </h4>
-            <p class="text-start">La FIRST® LEGO® League (FLL) est bien plus qu'une compétition de robotique. C’est une
-                aventure éducative pour les jeunes Togolais de 9 à 16 ans autour des sciences, technologies, ingénierie
-                et mathématiques (STEM).</p>
-        </section>
-        <div class="img_container">
-            <img src="img/banner 2.jpg" alt="" class="img-fluid w-100">
-        </div>
-        <section class="container py-4">
-            <br>
-            <h4 class="text-center mb-4 submerged">Thème 2024–2025 : SUBMERGED℠</h4>
-            <p class="text-center">Plongeons dans les profondeurs de l’océan pour explorer, comprendre et innover à
-                travers la robotique
-                LEGO®.</p>
-        </section>
-        <section class="bg-light py-5">
-            <div class="container text-center">
-                <h3 class="fw-bold mb-4 animate__animated animate__fadeInDown">Quelques chiffres clés</h3>
-                <div class="row ">
-                    <div class="col-md-3">
-
-                        <h4 class="numbers fw-bold">400</h4>
-                        <p>participants</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="numbers fw-bold">20</h4>
-                        <p>établissements</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="numbers fw-bold">9</h4>
-                        <p>villes</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="numbers fw-bold">21</h4>
-                        <p>mentors formés</p>
-                    </div>
-                </div>
-                <p class="mt-4 fw-bold finale_text">Grande finale : <strong>27 juin 2025 à Lomé</strong></p>
-            </div>
-        </section>
-        <section class="py-5 bg-light">
-            <div class="container text-center">
-                <h3 class="fw-bold mb-4 pb-4 animate__animated animate__fadeInDown">Pourquoi y participer ?</h3>
-                <div class="row g-4">
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100 shadow-sm hover-effect">
-                            <div class="card-body p-4">
-                                <div class="icon-box mb-3">
-                                    <i class="fas fa-brain fa-3x "></i>
-                                </div>
-                                <h5 class="fw-bold mb-3">Esprit critique</h5>
-                                <p class="mb-0">Développez votre capacité à poser les bonnes questions et résoudre des
-                                    problèmes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100 shadow-sm hover-effect">
-                            <div class="card-body p-4">
-                                <div class="icon-box mb-3">
-                                    <i class="fas fa-users fa-3x "></i>
-                                </div>
-                                <h5 class="fw-bold mb-3">Collaboration</h5>
-                                <p class="mb-0">Apprenez à coopérer, écouter et travailler en équipe dans un esprit
-                                    collectif.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100 shadow-sm hover-effect">
-                            <div class="card-body p-4">
-                                <div class="icon-box mb-3">
-                                    <i class="fas fa-robot fa-3x "></i>
-                                </div>
-                                <h5 class="fw-bold mb-3">Technologie</h5>
-                                <p class="mb-0">Découvrez l'univers des technologies LEGO® et bien plus encore.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100 shadow-sm hover-effect">
-                            <div class="card-body p-4">
-                                <div class="icon-box mb-3">
-                                    <i class="fas fa-hands-helping fa-3x "></i>
-                                </div>
-                                <h5 class="fw-bold mb-3">Engagement</h5>
-                                <p class="mb-0">Devenez acteur·rice du changement.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="flip-countdown-section text-center py-5 bg-dark text-white">
+        <section class="divisions-section text-center">
             <div class="container">
-                <h2 class="fw-bold mb-4">
-                    <i class="fas fa-trophy me-2 text-warning"></i>Finale Nationale FLL Togo
-                </h2>
-                <div class="flip-countdown-container">
+                <p class="fs-5 mb-5">La FLL comprend <strong>3 divisions</strong> adaptées à l’âge des participant·e·s :
+                </p>
+                <div class="row g-4">
+                    <!-- Discover -->
+                    <div class="col-md-4">
+                        <div class="division-card">
+                            <img src="img/age6.png" alt="FLL Discover" class="division-image">
+                            <div class="division-content">
+                                <h4>FLL Discover (4–6 ans)</h4>
+                                <p class="text-muted">Premiers pas dans les STEM par le jeu.</p>
+                                <span class="division-status status-inactif">Pas encore disponible au Togo</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="flip-countdown-item">
-                    <div id="flipdown" class="flipdown"></div>
-                </div>
-                </div>    
-                    <div class="finale-info mt-4 pt-3">
-                        <p class="mb-2"><i class="fas fa-calendar-alt me-2"></i><strong>27 Juin 2025</strong></p>
-                        <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i><strong>Lomé, Togo</strong></p>
+                    <!-- Explore -->
+                    <div class="col-md-4">
+                        <div class="division-card">
+                            <img src="img/age10.png" alt="FLL Explore" class="division-image">
+                            <div class="division-content">
+                                <h4>FLL Explore (6–10 ans)</h4>
+                                <p class="text-muted">Projets simples autour d’un thème, avec modèles motorisés.</p>
+                                <span class="division-status status-dev">En développement au Togo</span>
+                            </div>
+                        </div>
                     </div>
-                
-            </div>
-        </div>
 
-
-        <section class=" container partenaire-section">
-            <h3 class="text-center py-5">Nos partenaires sont essentiels !</h3>
-            <p class="text-center">Nous remercions nos partenaires pour leur soutien précieux et leur confiance dans
-                l'organisation de la
-                FIRST® LEGO® League – Togo.
-            </p>
-            <div class="text-center">
-                <a class="btn btn-c2  py-3 mt-3 btn-hover2" href="propos.html" role="button">
-                    En savoir +
-                </a>
-            </div>
-            <div class="partners-container py-5">
-
-                <h5 class="text-center mb-4">Nos partenaires</h5>
-                <div class="d-flex justify-content-center flex-wrap gap-5">
-
-                    <div class="">
-                        <img src="img/rt.png" alt="partenaire 1" class="img-fluid partner-logo">
-                    </div>
-                    <div class="">
-                        <img src="img/mentd.png" alt="partenaire 2" class="img-fluid partner-logo">
-                    </div>
-                    <div class="">
-                        <img src="img/atd.png" alt="partenaire 3" class="img-fluid partner-logo">
-                    </div>
-                    <div class="">
-                        <img src="img/micro.png" alt="partenaire 4" class="img-fluid partner-logo">
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center flex-wrap gap-5 mt-2">
-
-                    <div class="">
-                        <img src="img/sciense.png" alt="partenaire 5" class="img-fluid partner-logo">
-                    </div>
-                    <div class="">
-                        <img src="img/talent.png" alt="partenaire 6" class="img-fluid partner-logo">
-                    </div>
-                    <div class="">
-                        <img src="img/institut.png" alt="partenaire 7" class="img-fluid partner-logo">
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center flex-wrap gap-5 mt-2">
-                    <div class="">
-                        <img src="img/stem.png" alt="partenaire 8" class="img-fluid partner-logo">
-                    </div>
-                    <div class="">
-                        <img src="img/tidd.png" alt="partenaire 9" class="img-fluid partner-logo">
+                    <!-- Challenge -->
+                    <div class="col-md-4">
+                        <div class="division-card">
+                            <img src="img/age16.png" alt="FLL Challenge" class="division-image">
+                            <div class="division-content">
+                                <h4>FLL Challenge (9–16 ans)</h4>
+                                <p class="text-muted">Robotique LEGO® + projet d’innovation présenté au jury.</p>
+                                <span class="division-status status-actif">Division active au Togo</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="text-center mb-5">
-                <!--   -->
-                <h5 class="mb-1">Sponsor</h5>
-                <img src="img/yas.png" alt="sponsor officiel" class="img-fluid main-sponsor-logo">
-            </div>
-
         </section>
 
-        <section class="py-5 bg-light">
-            <div class="container text-center">
-                <h3 class="fw-bold pb-5"> Rejoignez l’aventure maintenant !</h3>
-                <div class="d-flex justify-content-center gap-4 flex-wrap">
-                    <a class="btn btn-c px-4 py-3  btn-hover" href="#" role="button">
-                        Inscrire votre équipe
-                    </a>
-                    <a class="btn btn-c px-4 py-3  btn-hover" href="#" role="button">
-                        Devenir partenaire
-                    </a>
-        </section>
 
+      
     </main>
 
-
-    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-                    <!--
-                    <h5 class="fw-bold text-uppercase">FLL Togo</h5>
-                    <p>Inspirez la jeunesse togolaise à travers la science, la technologie et la robotique.</p>-->
-                    <img src="img/fll_logorev.svg" alt="FLL Togo" style="max-width: 120px;" class="mt-2">
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold text-uppercase">Newsletter</h5>
-                    <p>Recevez les dernières infos sur la saison FLL.</p>
-                    <form>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email"
-                                required>
-                            <button class="btn btn-primary" type="submit">S'abonner</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-md-4 mb-4 text-md-end ">
-                    <h5 class="fw-bold text-uppercase">Liens utiles</h5>
-                    <ul class="list-unstyled text-md-end ">
-                        <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                        <li><a href="programmes.html" class="text-white text-decoration-none">Programmes</a></li>
-                        <li><a href="saison.html" class="text-white text-decoration-none">Saison</a></li>
-                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="text-center pt-3 border-top border-secondary mt-4">
-                <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League – Togo. Tous droits réservés.</p>
-                <div class="social ">
-
-
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
-    <script>
-
-        const finaleDate = new Date('2025-06-27T09:00:00Z').getTime() / 1000;
-
-        new FlipDown(finaleDate, {
-
-            theme: 'dark',
-
-            headings: ['Jours', 'Heures', 'Minutes', 'Secondes']
-
-        }).start();
-
-
-
-    </script>
-
-
-
-
 </body>
 
 </html>

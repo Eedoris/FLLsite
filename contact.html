@@ -36,9 +36,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="programmes.html">Programmes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="saison.html">Saison</a>
-                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="saisonDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Saison
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="saisonDropdown">
+                            <li><a class="dropdown-item " href="saison.html">Saison 2024–2025</a></li>
+                            <li><a class="dropdown-item" href="saison2.html">Saison 2025–2026</a></li>
+                        </ul>
+                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="inscription.html">Inscriptions</a>
                 </li>
@@ -71,8 +78,10 @@
             <option value="partenaires">Demande partenariat</option>
         </select>
     </div>
-    <div id="form-contact" class="form-box">[Formulaire contact général]</div>
-    <div id="form-ecole" class="form-box d-none">[Formulaire Google école]</div>
+    <div id="form-contact" class="form-box"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJWKpPeLUNfLPrgSTMcdFrt_RRLSALDDNaW2P7YWRvCyIoYQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe></div>
+    <div id="form-ecole" class="form-box d-none"><iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScFUQeQ7_bVCOyZ_0MJGjldQEztMk3Mw5Fbb1LAN5KhawrInw/viewform?embedded=true"
+            width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe></div>
     <div id="form-mentors" class="form-box d-none">
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSeajc_oNASbK9AqtH8Sdxyk4gbsechTHGqLvnrWy58n1T4IAQ/viewform?embedded=true"
@@ -83,58 +92,63 @@
     <div id="form-benevoles" class="form-box d-none">
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfBXHnx9Cu6UNP6ZijwofoVZ0ADs5CmAMEc1tHqku8nscqDbg/viewform?embedded=true"
-            width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+            width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
     </div>
-    <div id="form-partenaires" class="form-box d-none">[Formulaire Google partenaires]</div>
+    <div id="form-partenaires" class="form-box d-none"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfT7F_n403VL5X1ru_O96mGP94UGzzXOEvVnTNAdzYhgWw2oQ/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe></div>
 </div>
 
 
 
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
 
-<footer class="bg-dark text-white pt-5 pb-3 mt-5">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <!--
+                <div class="col-md-4 mb-4">
+                    <!--
                     <h5 class="fw-bold text-uppercase">FLL Togo</h5>
                     <p>Inspirez la jeunesse togolaise à travers la science, la technologie et la robotique.</p>-->
-                <img src="img/fll_logorev.svg" alt="FLL Togo" style="max-width: 120px;" class="mt-2">
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <h5 class="fw-bold text-uppercase">Newsletter</h5>
-                <p>Recevez les dernières infos sur la saison FLL.</p>
-                <form>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email"
-                            required>
-                        <button class="btn btn-primary" type="submit">S'abonner</button>
+                    <img src="img/fll_logorev.svg" alt="FLL Togo" width="120" class="mt-2 mb-3">
+                    <p>Inspirons la jeunesse togolaise à travers la science, la technologie et la robotique.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="social-icon text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon text-white me-2"><i class="fab fa-instagram"></i></a>
                     </div>
-                </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold text-uppercase">Newsletter</h5>
+                    <p>Recevez les dernières infos sur la saison FLL.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email"
+                                required>
+                            <button class="btn btn-primary" type="submit">S'abonner</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4 text-md-end ">
+                    <h5 class="fw-bold text-uppercase">Liens utiles</h5>
+                    <ul class="list-unstyled text-md-end ">
+                        <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li><a href="programmes.html" class="text-white text-decoration-none">Programmes</a></li>
+                        <li><a href="saison.html" class="text-white text-decoration-none">Saison</a></li>
+                        <li><a href="inscription.html" class="text-white text-decoration-none">Inscriptions</a></li>
+                        <li><a href="propos.html" class="text-white text-decoration-none">À propos</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center pt-3 border-top border-secondary mt-4">
+                    <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League – Togo. Tous droits réservés.</p>
+                    <div class="social ">
+
+
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-4 mb-4 text-md-end ">
-                <h5 class="fw-bold text-uppercase">Liens utiles</h5>
-                <ul class="list-unstyled text-md-end ">
-                    <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                    <li><a href="programmes.html" class="text-white text-decoration-none">Programmes</a></li>
-                    <li><a href="saison.html" class="text-white text-decoration-none">Saison</a></li>
-                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="text-center pt-3 border-top border-secondary mt-4">
-            <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League – Togo. Tous droits réservés.</p>
-            <div class="social ">
-
-
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     function showForm(formKey) {

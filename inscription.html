@@ -42,8 +42,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="programmes.html">Programmes</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="saison.html">Saison</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="saisonDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Saison
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="saisonDropdown">
+                            <li><a class="dropdown-item " href="saison.html">Saison 2024–2025</a></li>
+                            <li><a class="dropdown-item" href="saison2.html">Saison 2025–2026</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="inscription.html">Inscriptions</a>
@@ -83,14 +90,13 @@
                                 <h4 class="mb-0"><i class="fas fa-users me-2"></i>Équipe</h4>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Ouvert aux collèges et lycées publics/privés.</p>
+                                <p class="card-text">Ouvert aux collèges, lycées publics/privés, écoles internationales et centres STEM.</p>
                                 <ul class="list-group list-group-flush mb-3">
                                     <li class="list-group-item">10 élèves + 2 mentors</li>
-                                    <li class="list-group-item">Date limite: 31 octobre 2024</li>
                                 </ul>
                             </div>
                             <div class="card-footer bg-transparent">
-                                <a href="contact.html?form=ecole" class="btn btn-primary w-100">Formulaire d'inscription</a>
+                                <a href="contact.html?form=ecole" class="btn btn-primary w-100">S'Inscrire</a>
                             </div>
                         </div>
                     </div>
@@ -154,8 +160,7 @@
             </div>
         </section>
     </div>
-
-    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
         <div class="container">
             <div class="row">
 
@@ -163,7 +168,13 @@
                     <!--
                     <h5 class="fw-bold text-uppercase">FLL Togo</h5>
                     <p>Inspirez la jeunesse togolaise à travers la science, la technologie et la robotique.</p>-->
-                    <img src="img/fll_logorev.svg" alt="FLL Togo" style="max-width: 120px;" class="mt-2">
+                    <img src="img/fll_logorev.svg" alt="FLL Togo" width="120" class="mt-2 mb-3">
+                    <p>Inspirons la jeunesse togolaise à travers la science, la technologie et la robotique.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="social-icon text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon text-white me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
@@ -184,20 +195,20 @@
                         <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
                         <li><a href="programmes.html" class="text-white text-decoration-none">Programmes</a></li>
                         <li><a href="saison.html" class="text-white text-decoration-none">Saison</a></li>
+                        <li><a href="inscription.html" class="text-white text-decoration-none">Inscriptions</a></li>
+                        <li><a href="propos.html" class="text-white text-decoration-none">À propos</a></li>
                         <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
 
-            </div>
-
-            <div class="text-center pt-3 border-top border-secondary mt-4">
-                <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League – Togo. Tous droits réservés.</p>
-                <div class="social ">
+                <div class="text-center pt-3 border-top border-secondary mt-4">
+                    <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League – Togo. Tous droits réservés.</p>
+                    <div class="social ">
 
 
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
 
 </body>
