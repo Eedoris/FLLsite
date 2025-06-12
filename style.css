@@ -125,6 +125,17 @@ form.d-flex .btn {
     height: 100%;
 }
 
+
+@media (max-width: 768px) {
+    .img_container {
+        height: 250px; 
+    }
+    .sub-img{
+       max-height: 2%;
+    }
+}
+
+
 .finale_text:hover {
     color: var(--first-color);
 }
