@@ -132,7 +132,8 @@ form.d-flex .btn {
         margin-bottom: 5%;
     }
     .sub-img{
-       max-height: 2%;
+       max-height: 3%;
+       padding: 5px;
     }
 }
 
