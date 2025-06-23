@@ -128,13 +128,14 @@ form.d-flex .btn {
 
 @media (max-width: 768px) {
     .img_container {
-        height: 250px; 
+        height: 250px;
         margin-bottom: 5%;
     }
-    .sub-img{
-       max-height: 3%;
-       padding-top: 5px;
-       padding-bottom: 5px;
+
+    .sub-img {
+        max-height: 3%;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
@@ -789,12 +790,29 @@ body.saison-party .text-color {
     color: #c08848 !important;
 }
 
-body.saison-party  .gradient-background {
- background: #ffffff;
-background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 64%, rgba(230, 170, 101, 1) 100%);
+body.saison-party .gradient-background {
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 64%, rgba(230, 170, 101, 1) 100%);
 }
 
 body.saison-page .gradient-background {
     background: #ffffff;
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 64%, #7ee7ffa5);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--fll-purple);
+    transform: translateY(-3px);
 }
