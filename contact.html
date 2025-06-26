@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLL Togo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -19,223 +17,240 @@
             height: 55px !important;
             width: 50px !important;
         }
+        .btn_color:hover{
+            background-color: #c85300 !important;
+        }
     </style>
-
-
 </head>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="img/ffl logo2.png" alt="fll Togo" class="navbar-logo">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link " href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="programmes.html">Programmes</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="saisonDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Saison
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="saisonDropdown">
-                        <li><a class="dropdown-item " href="saison.html">Saison 2024–2025</a></li>
-                        <li><a class="dropdown-item" href="saison2.html">Saison 2025–2026</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="inscription.html">Inscriptions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="propos.html">À propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <a class="btn btn-c px-3 py-3  btn-hover bt-color " href="https://bit.ly/4kXrxj3" role="button">
-                Nous soutenir
-                <i class="fas fa-heart ms-2"></i>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/ffl logo2.png" alt="fll Togo" class="navbar-logo">
             </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programmes.html">Programmes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="saisonDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Saison
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="saisonDropdown">
+                            <li><a class="dropdown-item" href="saison.html">Saison 2024-2025</a></li>
+                            <li><a class="dropdown-item" href="saison2.html">Saison 2025-2026</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inscription.html">Inscriptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="propos.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-c px-3 py-3 btn-hover bt-color" href="https://bit.ly/4kXrxj3" role="button">
+                    Nous soutenir
+                    <i class="fas fa-heart ms-2"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="container my-5">
-    <h2 class="mb-4">Formulaire de contact</h2>
+    <div class="container my-5">
+        <h2 class="mb-4">Formulaire de contact</h2>
 
-
-    <div class="mb-4">
-        <label for="formSelector" class="form-label">Choisir un type de formulaire :</label>
-        <select id="formSelector" class="form-select">
-            <option value="contact">Contact général</option>
-            <option value="ecole">Inscription école</option>
-            <option value="mentors">Postulation mentor</option>
-            <option value="benevoles">Formulaire bénévolat</option>
-            <option value="partenaires">Demande partenariat</option>
-        </select>
-    </div>
-    <div id="form-contact" class="form-box">
-        <div class="card shadow p-4">
-            <h3 class="mb-4">Coordonnées</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    <i class="fas fa-map-marker-alt me-2 text-danger"></i>
-                    <strong>Adresse :</strong> Avédji Léo 2000, Lomé-Togo
-                </li>
-                <li class="mb-3">
-                    <i class="fas fa-phone-alt me-2 text-success"></i>
-                    <strong>Tél :</strong> (00228) 92060489 / 70852323
-                </li>
-                <li class="mb-3">
-                    <i class="fas fa-envelope me-2 text-primary"></i>
-                    <strong>Email :</strong> <a href="mailto:contact@tidd.africa">contact@tidd.africa</a>
-                </li>
-                <li class="mb-3">
-                    <i class="fab fa-whatsapp me-2 text-success"></i>
-                    <strong>WhatsApp :</strong> <a href="http://wa.me/22892060489" target="_blank">TIDD</a>
-                </li>
-            </ul>
-
-            <h4 class="mt-4">Réseaux sociaux</h4>
-            <ul class="list-unstyled">
-                <li class="mb-2">
-                    <i class="fab fa-facebook me-2 text-primary"></i>
-                    <a href="https://www.facebook.com/tiddafrica" target="_blank">Facebook – TIDD</a>
-                </li>
-                <li class="mb-2">
-                    <i class="fab fa-instagram me-2 text-danger"></i>
-                    <a href="https://www.instagram.com/tiddafrica" target="_blank">Instagram – TIDD</a>
-                </li>
-                <li class="mb-2">
-                    <i class="fab fa-x me-2"></i>
-                    <a href="https://x.com/tiddafrica" target="_blank">X (Twitter) – TIDD</a>
-                </li>
-                <li class="mb-2">
-                    <i class="fab fa-linkedin me-2 text-info"></i>
-                    <a href="https://www.linkedin.com/company/tiddafrica" target="_blank">LinkedIn – TIDD</a>
-                </li>
-            </ul>
+        <div class="mb-4">
+            <label for="formSelector" class="form-label">Choisir un type de formulaire :</label>
+            <select id="formSelector" class="form-select">
+                <option value="contact">Contact général</option>
+                <option value="ecole">Inscription école</option>
+                <option value="mentors">Postulation mentor</option>
+                <option value="benevoles">Formulaire bénévolat</option>
+                <option value="partenaires">Demande partenariat</option>
+            </select>
         </div>
-    </div>
 
-    <div id="form-ecole" class="form-box d-none"><iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScFUQeQ7_bVCOyZ_0MJGjldQEztMk3Mw5Fbb1LAN5KhawrInw/viewform?embedded=true"
-            width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe></div>
-    <div id="form-mentors" class="form-box d-none">
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeajc_oNASbK9AqtH8Sdxyk4gbsechTHGqLvnrWy58n1T4IAQ/viewform?embedded=true"
-            width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
-    </div>
-    <div id="form-benevoles" class="form-box d-none">
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfBXHnx9Cu6UNP6ZijwofoVZ0ADs5CmAMEc1tHqku8nscqDbg/viewform?embedded=true"
-            width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
-    </div>
-    <div id="form-partenaires" class="form-box d-none"><iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfT7F_n403VL5X1ru_O96mGP94UGzzXOEvVnTNAdzYhgWw2oQ/viewform?embedded=true"
-            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe></div>
-</div>
+        <div id="form-contact" class="form-box"  style="margin-top: 2rem;">
+            <div class="card shadow p-4 border-0" style="background-color: #f8f9fa;">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="img/tidd.png" alt="Logo TIDD" class="img-fluid me-3" style="max-height: 60px;">
+                            <h3 class="mb-0" style="color: #000;">Nos coordonnées</h3>
+                        </div>
 
+                        <div class="contact-info">
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 me-3" style="color: #FF6B00; font-size: 1.1rem;"></i>
+                                    <div>
+                                        <strong style="color: #000;">Adresse :</strong>
+                                        <p class="mb-0" style="color: #333;">Avédji Léo 2000, Lomé-Togo</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-phone-alt mt-1 me-3" style="color: #FF6B00; font-size: 1.1rem;"></i>
+                                    <div>
+                                        <strong style="color: #000;">Téléphone :</strong>
+                                        <p class="mb-0" style="color: #333;">(00228) 92060489 / 70852323</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-envelope mt-1 me-3" style="color: #FF6B00; font-size: 1.1rem;"></i>
+                                    <div>
+                                        <strong style="color: #000;">Email :</strong>
+                                        <p class="mb-0"><a href="mailto:contact@tidd.africa" style="color: #FF6B00;">contact@tidd.africa</a></p>
+                                    </div>
+                                </li>
+                                <li class="mb-4 d-flex align-items-start">
+                                    <i class="fab fa-whatsapp mt-1 me-3" style="color: #FF6B00; font-size: 1.1rem;"></i>
+                                    <div>
+                                        <strong style="color: #000;">WhatsApp :</strong>
+                                        <p class="mb-0"><a href="http://wa.me/22892060489" target="_blank" style="color: #FF6B00;">Nous contacter</a></p>
+                                    </div>
+                                </li>
+                            </ul>
 
+                            <h5 class="mt-4 mb-3" style="color: #000;">Suivez-nous</h5>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/tiddafrica" target="_blank" class="btn btn-sm me-2 mb-2  btn_color" style="background-color: #FF6B00; color: white; border-color: #FF6B00;">
+                                    <i class="fab fa-facebook-f me-1"></i> Facebook
+                                </a>
+                                <a href="https://www.instagram.com/tiddafrica" target="_blank" class="btn btn-sm me-2 mb-2  btn_color" style="background-color: #FF6B00; color: white; border-color: #FF6B00;">
+                                    <i class="fab fa-instagram me-1"></i> Instagram
+                                </a>
+                                <a href="https://x.com/tiddafrica" target="_blank" class="btn btn-sm me-2 mb-2 btn_color" style="background-color: #FF6B00; color: white; border-color: #FF6B00;">
+                                    <i class="fab fa-x me-1"></i> Twitter
+                                </a>
+                                <a href="https://www.linkedin.com/company/tiddafrica" target="_blank" class="btn btn-sm mb-2  btn_color" style="background-color: #FF6B00; color: white; border-color: #FF6B00;">
+                                    <i class="fab fa-linkedin-in me-1"></i> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-<footer class="bg-dark text-white pt-5 pb-3 mt-5">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <!--
-                    <h5 class="fw-bold text-uppercase">FLL Togo</h5>
-                    <p>Inspirez la jeunesse togolaise à travers la science, la technologie et la robotique.</p>-->
-                <img src="img/fll_logorev.svg" alt="FLL Togo" width="120" class="mt-2 mb-3">
-                <p>Inspirons la jeunesse togolaise à travers la science, la technologie et la robotique.</p>
-                <div class="d-flex mt-3">
-                    <a href="https://m.facebook.com/tiddafrica" class="social-icon text-white me-2"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://x.com/tiddafrica" class="social-icon text-white me-2"><i class="fab fa-x"></i></a>
-                    <a href="https://www.instagram.com/tiddafrica/" class="social-icon text-white me-2"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://fr.linkedin.com/company/tiddafrica" class="social-icon text-white me-2"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <!--<a href="https://www.youtube.com/@tiddafrica" class="social-icon text-white me-2"><i class="fab fa-youtube"></i></a>-->
-                    <a href="https://www.tiktok.com/@tiddafrica" class="social-icon text-white me-2"><i
-                            class="fab fa-tiktok"></i></a>
-                    <p class="mt-0">@tiddafrica</p>
+                    
+                    <div class="col-lg-6">
+                        <div class="h-100">
+                            <h5 class="mb-3" style="color: #000;">Localisation</h5>
+                            <div class="ratio ratio-16x9 rounded overflow-hidden border border-2" style="border-color: #e45f000f !important;">
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4219408105514!2d1.1753350000000002!3d6.207944900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e36657eb0b89%3A0x2911a9b3687d54c6!2sTIDD%20(Technologies%20et%20Innovations%20pour%20le%20D%C3%A9veloppement%20Durable%20)!5e0!3m2!1sfr!2stg!4v1750932125208!5m2!1sfr!2stg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <h5 class="fw-bold text-uppercase">Newsletter</h5>
-                <p>Recevez les dernières infos sur la saison FLL.</p>
-                <form>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email"
-                            required>
-                        <button class="btn btn-primary" type="submit">S'abonner</button>
+        <div id="form-ecole" class="form-box d-none">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFUQeQ7_bVCOyZ_0MJGjldQEztMk3Mw5Fbb1LAN5KhawrInw/viewform?embedded=true"
+                width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Chargement...</iframe>
+        </div>
+
+        <div id="form-mentors" class="form-box d-none">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeajc_oNASbK9AqtH8Sdxyk4gbsechTHGqLvnrWy58n1T4IAQ/viewform?embedded=true"
+                width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Chargement...</iframe>
+        </div>
+
+        <div id="form-benevoles" class="form-box d-none">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBXHnx9Cu6UNP6ZijwofoVZ0ADs5CmAMEc1tHqku8nscqDbg/viewform?embedded=true"
+                width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Chargement...</iframe>
+        </div>
+
+        <div id="form-partenaires" class="form-box d-none">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfT7F_n403VL5X1ru_O96mGP94UGzzXOEvVnTNAdzYhgWw2oQ/viewform?embedded=true"
+                width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Chargement...</iframe>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="img/fll_logorev.svg" alt="FLL Togo" width="120" class="mt-2 mb-3">
+                    <p>Inspirons la jeunesse togolaise à travers la science, la technologie et la robotique.</p>
+                    <div class="d-flex mt-3">
+                        <a href="https://m.facebook.com/tiddafrica" class="social-icon text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/tiddafrica" class="social-icon text-white me-2"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/tiddafrica/" class="social-icon text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://fr.linkedin.com/company/tiddafrica" class="social-icon text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.tiktok.com/@tiddafrica" class="social-icon text-white me-2"><i class="fab fa-tiktok"></i></a>
+                        <p class="mt-0">@tiddafrica</p>
                     </div>
-                </form>
-            </div>
+                </div>
 
-            <div class="col-md-4 mb-4 text-md-end ">
-                <h5 class="fw-bold text-uppercase">Liens utiles</h5>
-                <ul class="list-unstyled text-md-end ">
-                    <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                    <li><a href="programmes.html" class="text-white text-decoration-none">Programmes</a></li>
-                    <li><a href="saison.html" class="text-white text-decoration-none">Saison</a></li>
-                    <li><a href="inscription.html" class="text-white text-decoration-none">Inscriptions</a></li>
-                    <li><a href="propos.html" class="text-white text-decoration-none">À propos</a></li>
-                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                </ul>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold text-uppercase">Newsletter</h5>
+                    <p>Recevez les dernières infos sur la saison FLL.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email" required>
+                            <button class="btn btn-primary" type="submit">S'abonner</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4 text-md-end">
+                    <h5 class="fw-bold text-uppercase">Liens utiles</h5>
+                    <ul class="list-unstyled text-md-end">
+                        <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li><a href="programmes.html" class="text-white text-decoration-none">Programmes</a></li>
+                        <li><a href="saison.html" class="text-white text-decoration-none">Saison</a></li>
+                        <li><a href="inscription.html" class="text-white text-decoration-none">Inscriptions</a></li>
+                        <li><a href="propos.html" class="text-white text-decoration-none">À propos</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="text-center pt-3 border-top border-secondary mt-4">
-                <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League – Togo. Tous droits réservés.</p>
-                <div class="social ">
-
-
-                </div>
+                <p class="mb-0 small">&copy; 2024-2025 FIRST® LEGO® League - Togo. Tous droits réservés.</p>
             </div>
         </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    function showForm(formKey) {
-        const allForms = document.querySelectorAll('.form-box');
-        allForms.forEach(f => f.classList.add('d-none'));
+    </footer>
 
-        const targetForm = document.getElementById('form-' + formKey);
-        if (targetForm) {
-            targetForm.classList.remove('d-none');
-            document.getElementById('formSelector').value = formKey;
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showForm(formKey) {
+            const allForms = document.querySelectorAll('.form-box');
+            allForms.forEach(f => f.classList.add('d-none'));
+
+            const targetForm = document.getElementById('form-' + formKey);
+            if (targetForm) {
+                targetForm.classList.remove('d-none');
+                document.getElementById('formSelector').value = formKey;
+            }
         }
-    }
 
-    // Changement via menu déroulant
-    document.getElementById('formSelector').addEventListener('change', function () {
-        showForm(this.value);
-    });
+        // Changement via menu déroulant
+        document.getElementById('formSelector').addEventListener('change', function() {
+            showForm(this.value);
+        });
 
-    // Lecture de l'URL pour afficher le formulaire directement
-    const urlParams = new URLSearchParams(window.location.search);
-    const formurl = urlParams.get('form');
-    if (formurl) {
-        showForm(formurl);
-    } else {
-        showForm('contact');
-    }
-</script>
-
+        // Lecture de l'URL pour afficher le formulaire directement
+        const urlParams = new URLSearchParams(window.location.search);
+        const formurl = urlParams.get('form');
+        if (formurl) {
+            showForm(formurl);
+        } else {
+            showForm('contact');
+        }
+    </script>
 </body>
-
 
 </html>
