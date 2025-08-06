@@ -478,7 +478,8 @@ h3.text-primary {
 
 
 .flip-countdown-section {
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+   /* background: linear-gradient(135deg, #2c3e50, #4ca1af);*/
+   background: linear-gradient(135deg, #50412c, #b78b14);
 }
 
 .flip-countdown-container {
@@ -655,12 +656,11 @@ a.btn-c2 {
 
 /* Bannière en plein écran largeur */
 .sub_text {
-    background-color: rgba(12, 82, 129, 0.4);
+    background-color: rgba(132, 80, 2, 0.426);
     color: white;
     padding: 1rem;
     border-radius: 3x;
 }
-
 
 .partner-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -762,25 +762,25 @@ body.saison-party .btn-primary {
     background-color: #c29c71 !important;
     border-color: #c38743 !important;
     color: #fff;
-    ;
 
 }
 
 body.saison-party .btn-primary:hover {
     color: #fff;
-    ;
 
 }
 
 body.saison-party .btn-outline-primary {
-    background-color: #c29c71 !important;
-    border-color: #5a370f !important;
+    background-color: #e99d47 !important;
+    border-color: #c98538 !important;
+    color: white;
 }
 
 body.saison-party .btn-outline-primary:hover {
-    background-color: #c29c71 !important;
-    color: #fff !important;
+    background-color: #ffffff !important;
+    color:  #ac8557 !important;
 }
+
 
 body.saison-party .separator-line {
     background-color: #c29c71 !important;
